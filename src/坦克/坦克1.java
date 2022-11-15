@@ -21,9 +21,6 @@ public class 坦克1 extends JFrame implements ActionListener {
     JMenuItem jmi1=null;
     //退出系统
     JMenuItem jmi2=null;
-    //存盘退出
-    JMenuItem jmi3=null;
-    JMenuItem jmi4=null;
     public static void main(String[] args){
         坦克1 ch=new 坦克1();
     }
@@ -39,15 +36,9 @@ public class 坦克1 extends JFrame implements ActionListener {
         jmi1.setMnemonic('N');
         jmi2=new JMenuItem("退出游戏(E)");
         jmi2.setMnemonic('E');
-        jmi3=new JMenuItem("存盘退出游戏(C)");
-        jmi3.setMnemonic('C');
-        jmi4=new JMenuItem("继续游戏(S)");
-        jmi4.setMnemonic('S');
 
         jm1.add(jmi1);
         jm1.add(jmi2);
-        jm1.add(jmi3);
-        jm1.add(jmi4);
 
 
         jmb.add(jm1);
@@ -61,10 +52,6 @@ public class 坦克1 extends JFrame implements ActionListener {
         jmi2.addActionListener(this);
         jmi1.setActionCommand("开始新游戏");
         jmi2.setActionCommand("退出游戏");
-        jmi3.addActionListener(this);
-        jmi3.setActionCommand("存档");
-        jmi4.addActionListener(this);
-        jmi4.setActionCommand("继续");
         this.setJMenuBar(jmb);
         this.add(msp);
 
